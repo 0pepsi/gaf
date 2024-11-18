@@ -8,7 +8,7 @@ cd gaf
 chmod +x install.sh
 ./install.sh
 ```
-![damn]()
+![damn](Screenshot_20241118_111136.png)
 # How to run the script?
 ```sh
 ./gaf url
