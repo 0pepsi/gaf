@@ -5,6 +5,12 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
+# Check if the user is root
+if [ "$(id -u)" -ne 0 ]; then
+  echo "This script requires root privileges. Please run as root."
+  exit 1
+fi
+
 # Check if shc is installed
 if ! command_exists shc; then
   echo "shc is not installed. Installing shc..."
