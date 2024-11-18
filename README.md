@@ -5,8 +5,8 @@ You can read source code and extract files, which led me to discover Broken Acce
 ```sh
 git clone https://github.com/0pepsi/gaf
 cd gaf
-chmod +x install
-./install
+chmod +x install.sh.x
+./install.sh.x
 ```
 ![damn](Screenshot_20241118_111136.png)
 # How to run the script?
